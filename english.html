@@ -209,92 +209,94 @@
         </div>
 
         <!-- 单元列表（卡通化） -->
-        <div class="unit-box">
-            <div class="unit-card">
-                <div class="unit-title">Unit 1</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit1', 'unit1.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit1', 'https://www.bilibili.com/video/BV14jPjznEKX')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 2</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit2', 'unit2.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit2', 'https://www.bilibili.com/video/BV1xjPjznEez')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 3</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit3', 'unit3.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit3', 'https://www.bilibili.com/video/BV14jPjznETg')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 4</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit4', 'unit4.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit4', 'https://www.bilibili.com/video/BV18TPjz4ERP')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 5</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit5', 'unit5.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit5', 'https://www.bilibili.com/video/BV1QTPjz4EFw/')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 6</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit6', 'unit6.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit6', 'video')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 7</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit7', 'unit7.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit7', 'video')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 8</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit8', 'unit8.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit8', 'video')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 9</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit9', 'unit9.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit9', 'video')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Unit 10</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('unit10', 'unit10.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('unit10', 'video')">📺 视频</button>
-                </div>
-            </div>
-            <div class="unit-card">
-                <div class="unit-title">Word Bank</div>
-                <div class="unit-btn-group">
-                    <button class="unit-btn audio-btn" onclick="playMedia('wordbank', 'wordbank.mp3')">🎵 音频</button>
-                    <button class="unit-btn video-btn" onclick="playMedia('wordbank', 'video')">📺 视频</button>
-                </div>
-            </div>
-        </div>
+
+<div class="unit-box">
+    <div class="unit-card">
+      <div class="unit-title">Unit 1</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit1.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="https://www.bilibili.com/video/BV14jPjznEKX/?spm_id_from=333.1387.homepage.video_card.click">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 2</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit2.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="https://www.bilibili.com/video/BV1xjPjznEez/?spm_id_from=333.1387.homepage.video_card.click">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 3</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit3.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="https://www.bilibili.com/video/BV14jPjznETg/?spm_id_from=333.1387.homepage.video_card.click&vd_source=23a34ae9f73a9f2ecaaf406801043902">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 4</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit4.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="https://www.bilibili.com/video/BV18TPjz4ERP/?vd_source=23a34ae9f73a9f2ecaaf406801043902">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 5</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit5.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="https://www.bilibili.com/video/BV1QTPjz4EFw/">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 6</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit6.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="unit6.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 7</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit7.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="unit7.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 8</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit8.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="unit8.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 9</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit9.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="unit9.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Unit 10</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="unit10.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="unit10.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+    <div class="unit-card">
+      <div class="unit-title">Word Bank</div>
+      <div class="unit-btn-group">
+        <div class="unit-btn audio-btn" data-type="audio" data-src="wordbank.mp3">🎵 音频</div>
+        <div class="unit-btn video-btn" data-type="video" data-src="wordbank.mp4">拼读📺 视频</div>
+      </div>
+    </div>
+  </div>
+
 
         <!-- 播放器区域（可爱化） -->
         <div class="player">
             <div class="video-container" id="videoContainer" style="display: none;">
                 <video id="videoPlayer" controls ontimeupdate="updateProgress()"></video>
             </div>
-            <div class="audio-tip" id="audioTip">🎀 点击上方单元，选择音频/视频播放吧～ 🎀</div>
+            <div class="audio-tip" id="audioTip">🎀 点击上方单元，选择🎵 音频/📺 视频播放吧～ 🎀</div>
             
             <div class="controls">
                 <button class="control-btn" id="playBtn" onclick="togglePlay()">▶</button>
@@ -317,7 +319,7 @@
         let isPlaying = false;
         let mediaType = ''; // audio / video
 
-        // 播放音频/视频
+        // 播放🎵 音频/📺 视频
         function playMedia(unitKey, type) {
             mediaType = type;
             const audioTip = document.getElementById('audioTip');
@@ -328,17 +330,17 @@
             document.getElementById('progressBar').style.width = '0%';
             
             if (type === 'audio') {
-                // 隐藏视频，显示音频提示
+                // 隐藏📺 视频，显示🎵 音频提示
                 videoContainer.style.display = 'none';
                 audioTip.style.display = 'flex';
-                audioTip.textContent = `🎵 正在播放 ${unitKey} 音频～`;
+                audioTip.textContent = `🎵 正在播放 ${unitKey} 🎵 音频～`;
                 
                 // 停止之前的媒体
                 if (currentMedia) {
                     currentMedia.pause();
                 }
                 
-                // 创建新的音频对象
+                // 创建新的🎵 音频对象
                 currentMedia = new Audio(`${unitKey}.mp3`);
                 currentMedia.playbackRate = document.getElementById('speedSelect').value;
                 currentMedia.play();
@@ -349,7 +351,7 @@
                 currentMedia.ontimeupdate = updateProgress;
                 currentMedia.onended = playEnd;
             } else if (type === 'video') {
-                // 显示视频，隐藏音频提示
+                // 显示📺 视频，隐藏🎵 音频提示
                 audioTip.style.display = 'none';
                 videoContainer.style.display = 'block';
                 
@@ -358,7 +360,7 @@
                     currentMedia.pause();
                 }
                 
-                // 设置视频源并播放
+                // 设置📺 视频源并播放
                 videoPlayer.src = `${unitKey}.mp4`;
                 videoPlayer.playbackRate = document.getElementById('speedSelect').value;
                 videoPlayer.play();
